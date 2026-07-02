@@ -1,0 +1,41 @@
+Data Analyst
+
+Job Description
+
+We are seeking a motivated Data Analyst to collect, clean, analyze, and
+visualize data to support business decisions. The ideal candidate should
+be proficient in SQL, Excel, Python, and BI tools, with strong
+analytical and problem-solving skills. Freshers with relevant academic
+projects are encouraged to apply.
+
+Required Skills
+
+-   SQL
+-   Python (Pandas, NumPy, Matplotlib)
+-   Microsoft Excel (Advanced)
+-   Power BI or Tableau
+-   Statistics and Data Analysis
+-   Data Cleaning and Visualization
+-   Problem-Solving
+-   Communication Skills
+-   Critical Thinking
+-   Basic Machine Learning (Preferred)
+
+Qualifications
+
+-   Strong analytical and logical thinking
+-   Good communication and presentation skills
+-   Ability to work independently and in a team
+-   Attention to detail
+-   Willingness to learn new technologies
+
+Education
+
+Eligible candidates should possess any one of the following: - B.E. -
+B.Tech - B.Sc. (Computer Science, IT, Statistics, Mathematics) - M.Sc. -
+MCA - BCA
+
+Eligibility
+
+-   Freshers are welcome to apply.
+-   Internship or academic project experience is an advantage.

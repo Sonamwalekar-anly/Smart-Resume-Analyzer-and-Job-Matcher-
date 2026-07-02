@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Job Parsing Results</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Parsed Job Descriptions</h1>
+      {% for job in jobs %}
+        <div class="result-card">
+          <h2>{{ job.title }}</h2>
+          <p>{{ job.description }}</p>
+          <h3>Requirements</h3>
+          <ul>
+            {% for req in job.requirements %}
+              <li>{{ req }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+      <a href="/">Back to home</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume Match Results</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Resume Analysis</h1>
+      <div class="result-card">
+        <h2>{{ resume.name }}</h2>
+        <h3>Skills</h3>
+        <p>{{ resume.skills | join(", ") }}</p>
+        <h3>Experience</h3>
+        <p>{{ resume.experience | join("\n") }}</p>
+        <h3>Education</h3>
+        <p>{{ resume.education | join("\n") }}</p>
+      </div>
+      <h2>Job Matches</h2>
+      {% for match in matches %}
+        <div class="result-card">
+          <h3>{{ match.title }} — {{ match.score }}%</h3>
+          <p>{{ match.description }}</p>
+          <p><strong>Matched skills:</strong> {{ match.matched_skills | join(", ") }}</p>
+          <p><strong>Missing skills:</strong> {{ match.missing_skills | join(", ") }}</p>
+        </div>
+      {% endfor %}
+      <a href="/">Back to home</a>
+    </div>
+  </body>
+</html>

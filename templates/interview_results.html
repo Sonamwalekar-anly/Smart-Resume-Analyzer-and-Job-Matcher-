@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interview Analysis Results</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Interview Analysis</h1>
+      <div class="result-card">
+        <h2>{{ summary.video }}</h2>
+        <h3>Analysis</h3>
+        <p>{{ summary.analysis }}</p>
+        <h3>Insights</h3>
+        <ul>
+          {% for insight in summary.insights %}
+            <li>{{ insight }}</li>
+          {% endfor %}
+        </ul>
+        <h3>Recommendation</h3>
+        <p>{{ summary.recommendation }}</p>
+      </div>
+      <a href="/">Back to home</a>
+    </div>
+  </body>
+</html>
